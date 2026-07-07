@@ -55,7 +55,7 @@ export default function Navbar() {
             className="font-serif text-lg tracking-widest uppercase"
             style={{ fontFamily: "'Playfair Display', serif", fontWeight: 500, letterSpacing: "0.18em", color: "oklch(0.94 0.008 65)" }}
           >
-            <SQ LUX></SQLUX>
+            SQ LUX
           </span>
         </a>
 
