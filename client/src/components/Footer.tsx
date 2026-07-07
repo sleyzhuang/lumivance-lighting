@@ -32,7 +32,7 @@ export default function Footer() {
                   color: "oklch(0.94 0.008 65)",
                 }}
               >
-                WLUX
+                SQ LUX 
               </span>
             </div>
             <p
