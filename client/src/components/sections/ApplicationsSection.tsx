@@ -19,12 +19,42 @@ const HOTEL_LOBBY = "https://images.unsplash.com/photo-1566073771259-6a850609994
 const COMMERCIAL = "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80";
 
 const smallApps = [
-  { id: "02", title: "Cove Lighting", description: "Hidden linear LED systems for architectural cove details.", image: HERO_COVE },
-  { id: "03", title: "Hotel Lighting", description: "Curated lighting atmospheres for luxury hospitality.", image: HOTEL_LOBBY },
-  { id: "04", title: "Retail Lighting", description: "High-CRI linear systems that elevate merchandise presentation.", image: RETAIL_LINEAR },
-  { id: "05", title: "Architectural Linear", description: "Precision linear LED accents for building facades.", image: ARCHITECTURAL },
-  { id: "06", title: "Commercial Spaces", description: "Scalable lighting for offices and showrooms.", image: COMMERCIAL },
-  { id: "07", title: "Residential Ambient", description: "Warm, layered ambient lighting for high-end interiors.", image: RESIDENTIAL },
+  { 
+    id: "02", 
+    title: "Commercial Lighting", 
+    description: "LED strip solutions for hotels, offices, retail spaces and commercial projects.", 
+    image: COMMERCIAL 
+  },
+  { 
+    id: "03", 
+    title: "Signage Lighting", 
+    description: "Bright and reliable LED strips for channel letters, light boxes and advertising signs.", 
+    image: RETAIL_LINEAR 
+  },
+  { 
+    id: "04", 
+    title: "Cabinet Lighting", 
+    description: "Slim and flexible LED strip solutions for kitchens, wardrobes and furniture applications.", 
+    image: RESIDENTIAL 
+  },
+  { 
+    id: "05", 
+    title: "Wholesale Supply", 
+    description: "Factory-direct LED strip supply with OEM and customization support for distributors.", 
+    image: ARCHITECTURAL 
+  },
+  { 
+    id: "06", 
+    title: "Outdoor Lighting", 
+    description: "Waterproof LED strip solutions for building facades, landscapes and outdoor projects.", 
+    image: HERO_COVE 
+  },
+  { 
+    id: "07", 
+    title: "Architectural Lighting", 
+    description: "Professional linear lighting solutions for modern architectural environments.", 
+    image: HOTEL_LOBBY 
+  },
 ];
 
 function AppTile({ id, title, image, delay = 0 }: { id: string; title: string; image: string; delay?: number }) {
@@ -92,7 +122,7 @@ export default function ApplicationsSection() {
         {/* Section header */}
         <div className="mb-16 reveal">
           <span className="amber-rule" />
-          <span className="section-label">Where Light Transforms Space</span>
+          <span className="section-label">LED Strip Applications</span>
           <h2
             className="mt-4"
             style={{
@@ -105,8 +135,12 @@ export default function ApplicationsSection() {
               maxWidth: "600px",
             }}
           >
-            Lighting
-            <em style={{ fontStyle: "italic", color: "oklch(0.82 0.06 75)" }}> Applications</em>
+            Applications
+           <br />
+           <em style={{ fontStyle: "italic", color: "oklch(0.82 0.06 75)" }}>
+           for LED Strip
+           </em>
+            
           </h2>
           <p
             className="mt-4 max-w-lg"
@@ -118,7 +152,7 @@ export default function ApplicationsSection() {
               lineHeight: 1.8,
             }}
           >
-            From intimate residential spaces to large-scale commercial installations — our linear lighting systems are engineered for every architectural context.
+            Our LED strip lighting solutions are widely used in commercial projects, signage, stretch ceilings, cabinet lighting, wholesale distribution and outdoor architectural applications.
           </p>
         </div>
 
@@ -186,7 +220,7 @@ export default function ApplicationsSection() {
                 maxWidth: "480px",
               }}
             >
-              Seamless backlit stretch ceilings with uniform, dot-free illumination for premium commercial and hospitality spaces.
+              High-performance LED strip solutions for stretch ceiling systems, delivering uniform backlighting with dot-free illumination for residential and commercial projects.
             </p>
           </div>
         </div>
