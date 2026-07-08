@@ -5,21 +5,21 @@
  */
 
 const stats = [
-  { value: "11+", label: "Years of Experience", sub: "Since 2015" },
-  { value: "500+", label: "Projects Delivered", sub: "Worldwide" },
-  { value: "60+", label: "Countries Served", sub: "Global Distribution" },
-  { value: "CRI 90+", label: "Color Rendering Index", sub: "Premium Grade" },
-  { value: "15 Days", label: "Standard Lead Time", sub: "Sample to Delivery" },
-  { value: "ISO 9001", label: "Quality Certified", sub: "International Standard" },
+  { value: "11+", label: "Years LED Strip Manufacturing", sub: "Since 2015" },
+  { value: "60+", label: "Countries Exported", sub: "Global Partners" },
+  { value: "500+", label: "Projects Delivered", sub: "Worldwide Applications" },
+  { value: "10+", label: "QC Inspection Processes", sub: "Production Reliability" },
+  { value: "15 Days", label: "Fast Sample Lead Time", sub: "OEM Support" },
+  { value: "5 Years", label: "Commercial Warranty", sub: "Quality Assurance" },
 ];
 
 const capabilities = [
-  "Automated SMT production lines with optical inspection",
-  "In-house photometric testing laboratory",
-  "Aging test chambers for long-term reliability validation",
-  "Strict color binning process — CCT deviation < 50K",
-  "Full export documentation: CE, RoHS, LM-80 reports",
-  "Dedicated QC team for every production batch",
+  "Automated SMT production lines with optical inspection to ensure stable brightness and power output",
+  "In-house photometric testing laboratory for accurate lumen, color and performance measurement",
+  "Aging test chambers for long-term reliability validation and reduced failure rates",
+  "Strict color binning process — CCT deviation controlled within 50K for consistent lighting effects",
+  "Professional QC system covering voltage drop, brightness uniformity and waterproof performance tests",
+  "Complete OEM & ODM support with customization of PCB, LED chips, CCT, CRI and packaging",
 ];
 
 export default function ManufacturingSection() {
@@ -33,21 +33,23 @@ export default function ManufacturingSection() {
         {/* Section header */}
         <div className="mb-16 reveal">
           <span className="amber-rule" />
-          <span className="section-label">Manufacturing</span>
+          <span className="section-label">Why Choose SQ LUX</span>
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mt-4">
             <h2
-              style={{
-                fontFamily: "'Playfair Display', serif",
-                fontSize: "clamp(2rem, 4vw, 3.5rem)",
-                fontWeight: 400,
-                color: "oklch(0.94 0.008 65)",
-                letterSpacing: "-0.02em",
-                lineHeight: 1.1,
-              }}
-            >
-              Reliable
-              <br />
-              <em style={{ fontStyle: "italic", color: "oklch(0.82 0.06 75)" }}>Manufacturing Capability</em>
+             style={{
+             fontFamily: "'Playfair Display', serif",
+             fontSize: "clamp(2rem, 4vw, 3.5rem)",
+             fontWeight: 400,
+             color: "oklch(0.94 0.008 65)",
+             letterSpacing: "-0.02em",
+             lineHeight: 1.1,
+           }}
+           >
+             Factory Direct
+             <br />
+             <em style={{ fontStyle: "italic", color: "oklch(0.82 0.06 75)" }}>
+             LED Strip Manufacturer
+             </em>
             </h2>
             <p
               className="max-w-sm"
