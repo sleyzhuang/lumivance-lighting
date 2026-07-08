@@ -78,9 +78,9 @@ export default function HeroSection() {
             >
               Professional
               <br />
-              <em style={{ fontStyle: "italic", color: "oklch(0.88 0.06 75)" }}>Strip</em>
+              <em style={{ fontStyle: "italic", color: "oklch(0.88 0.06 75)" }}>LED Strip</em>
               <br />
-              LED Lighting
+              Lighting Solution
             </h1>
 
             {/* Subheadline */}
@@ -98,7 +98,7 @@ export default function HeroSection() {
                 transition: "opacity 0.8s cubic-bezier(0.23,1,0.32,1) 0.5s, transform 0.8s cubic-bezier(0.23,1,0.32,1) 0.5s",
               }}
             >
-              Dot-Free COB Lighting, Linear Lighting Systems &amp; Custom LED Solutions
+              SMD LED Strip | COB LED Strip | Neon LED Strip Manufacturer
               for Commercial and Architectural Projects.
             </p>
 
@@ -127,7 +127,7 @@ export default function HeroSection() {
                   (e.currentTarget as HTMLElement).style.background = "oklch(0.72 0.12 75)";
                 }}
               >
-                Start Your Project
+                Explore Products
                 <ArrowRight size={14} className="transition-transform duration-200 group-hover:translate-x-1" />
               </a>
               <a
@@ -150,7 +150,7 @@ export default function HeroSection() {
                   el.style.color = "oklch(0.94 0.008 65)";
                 }}
               >
-                Request Catalog
+                Get A Quote
               </a>
             </div>
           </div>

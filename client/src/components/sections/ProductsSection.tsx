@@ -13,35 +13,35 @@ const SMD_IMAGE = "https://images.unsplash.com/photo-1497366216548-37526070297c?
 const products = [
   {
     id: "01",
-    category: "COB LED Strip",
-    tagline: "Dot-Free Linear Illumination",
+    category: "SMD LED Strip",
+    tagline: "Reliable Flexible Lighting Solution",
     description:
-      "Our COB (Chip-on-Board) LED strips eliminate visible dots entirely, producing a seamless, continuous glow ideal for cove lighting, stretch ceilings, and any application where the light source must remain invisible.",
-    applications: ["Stretch Ceiling Backlighting", "Architectural Cove Lighting", "Hidden Ambient Lighting", "Display Case Illumination"],
-    highlights: ["Dot-free seamless glow", "CRI 95+", "2700K–6500K CCT range", "IP20 / IP65 options"],
-    image: COB_IMAGE,
+      "High-quality SMD LED strips designed for residential, commercial, and decorative lighting applications. Available in various LED types, color temperatures, and waterproof options to meet different project requirements.",
+    applications: ["Interior Decoration", "Commercial Lighting", "Display Lighting", "Cabinet & Cove Lighting"],
+    highlights: ["High brightness output", "Multiple LED types", "Flexible customization", "IP20 / IP65 / IP67 options"],
+    image: SMD_IMAGE,
     accent: "oklch(0.72 0.12 75)",
   },
   {
     id: "02",
-    category: "Neon Flex",
-    tagline: "Architectural Contour Lighting",
+    category: "COB LED Strip",
+    tagline: "Dot-Free Linear Illumination",
     description:
-      "Flexible silicone neon profiles for architectural contour lighting, signage, and decorative applications. Bend, curve, and shape to any architectural form — indoors or outdoors.",
-    applications: ["Building Facade Outlines", "Signage & Branding", "Pool & Outdoor Landscapes", "Interior Decorative Contours"],
-    highlights: ["360° bendable silicone", "IP67 waterproof", "Custom cut lengths", "RGB & single color"],
-    image: NEON_IMAGE,
+      "COB LED strips provide seamless dot-free lighting with uniform brightness, making them ideal for premium interior projects, stretch ceilings, and architectural lighting applications.",
+    applications: ["Stretch Ceiling Lighting", "Architectural Cove Lighting", "Hidden Ambient Lighting", "Premium Interior Projects"],
+    highlights: ["Dot-free seamless glow", "High CRI options", "Uniform illumination", "IP20 / IP65 options"],
+    image: COB_IMAGE,
     accent: "oklch(0.72 0.12 75)",
   },
   {
     id: "03",
-    category: "SMD LED Strip",
-    tagline: "Versatile Commercial Lighting",
+    category: "Neon Light LED Strip",
+    tagline: "Creative Flexible Lighting Solution",
     description:
-      "High-performance SMD LED strips for cost-effective commercial lighting projects. Stable brightness output, consistent color temperature, and broad application compatibility.",
-    applications: ["Office & Workspace Lighting", "Retail Display Lighting", "Under-Cabinet Illumination", "General Commercial Spaces"],
-    highlights: ["Cost-effective solution", "Stable lumen output", "Easy installation", "Wide voltage range"],
-    image: SMD_IMAGE,
+      "Flexible silicone LED neon strips designed for decorative and architectural applications, providing smooth curved lighting effects for indoor and outdoor projects.",
+    applications: ["Architectural Decoration", "Signage Lighting", "Outdoor Landscape Lighting", "Creative Lighting Design"],
+    highlights: ["Flexible silicone housing", "IP67 waterproof", "Custom lengths", "RGB & single color options"],
+    image: NEON_IMAGE,
     accent: "oklch(0.72 0.12 75)",
   },
 ];
@@ -57,7 +57,7 @@ export default function ProductsSection() {
         {/* Section header */}
         <div className="mb-16 reveal">
           <span className="amber-rule" />
-          <span className="section-label">Product Systems</span>
+          <span className="section-label">LED Strip Products</span>
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
             <h2
               className="mt-4"
@@ -72,7 +72,7 @@ export default function ProductsSection() {
             >
               Professional
               <br />
-              <em style={{ fontStyle: "italic", color: "oklch(0.82 0.06 75)" }}>Led Strip Solution</em>
+              <em style={{ fontStyle: "italic", color: "oklch(0.82 0.06 75)" }}>Led Strip Solutions</em>
             </h2>
             <p
               className="max-w-sm lg:text-right"
@@ -84,7 +84,7 @@ export default function ProductsSection() {
                 lineHeight: 1.8,
               }}
             >
-              Each system is engineered for a specific application context — not just a product, but a complete lighting solution.
+              Explore our core LED strip solutions including SMD LED Strip, COB LED Strip and Neon LED Strip for residential, commercial and architectural lighting applications.
             </p>
           </div>
         </div>
