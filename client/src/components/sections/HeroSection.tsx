@@ -43,7 +43,28 @@ export default function HeroSection() {
           }}
         />
       </div>
+      {/* Product showcase — right side */}
+      <div
+        className="absolute right-0 top-1/2 -translate-y-1/2 z-10 hidden md:flex items-center gap-6 pr-12"
+      >
+        <img
+          src="/images/smd.png"
+          alt="SMD LED Strip"
+          className="w-36 lg:w-44 object-contain drop-shadow-2xl"
+        />
 
+        <img
+          src="/images/cob.png"
+          alt="COB LED Strip"
+          className="w-40 lg:w-52 object-contain drop-shadow-2xl"
+        />
+
+        <img
+          src="/images/neon.png"
+          alt="Neon LED Strip"
+          className="w-36 lg:w-44 object-contain drop-shadow-2xl"
+        />
+      </div>
       {/* Content — lower-left quadrant */}
       <div className="relative z-10 h-full flex flex-col justify-end">
         <div className="container pb-16 md:pb-20 lg:pb-24">
