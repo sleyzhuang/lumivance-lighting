@@ -196,9 +196,10 @@ export default function HeroSection() {
           >
             {[
               { value: "11+", label: "Years Experience" },
+              { value: "CRI 95+", label: "Color Rendering" },
+              { value: "60+", label: "R9",},
               { value: "500+", label: "Projects Completed" },
               { value: "60+", label: "Countries Served" },
-              { value: "CRI 97+", label: "Color Rendering" },
             ].map((stat) => (
               <div key={stat.label} className="px-8 py-5 text-center" style={{ borderRight: "1px solid rgba(255,255,255,0.06)" }}>
                 <div
