@@ -19,7 +19,7 @@ const products = [
       "High-quality SMD LED strips designed for residential, commercial, and decorative lighting applications. Available in various LED types, color temperatures, and waterproof options to meet different project requirements.",
     applications: ["Interior Decoration", "Commercial Lighting", "Display Lighting", "Cabinet & Cove Lighting"],
     highlights: ["High brightness output", "Multiple LED types", "Flexible customization", "IP20 / IP65 / IP67 options"],
-    image: SMD_IMAGE,
+    image: "/images/smd.png",
     accent: "oklch(0.72 0.12 75)",
   },
   {
@@ -30,7 +30,7 @@ const products = [
       "COB LED strips provide seamless dot-free lighting with uniform brightness, making them ideal for premium interior projects, stretch ceilings, and architectural lighting applications.",
     applications: ["Stretch Ceiling Lighting", "Architectural Cove Lighting", "Hidden Ambient Lighting", "Premium Interior Projects"],
     highlights: ["Dot-free seamless glow", "High CRI options", "Uniform illumination", "IP20 / IP65 options"],
-    image: COB_IMAGE,
+    image: "/images/cob.png",
     accent: "oklch(0.72 0.12 75)",
   },
   {
@@ -41,7 +41,7 @@ const products = [
       "Flexible silicone LED neon strips designed for decorative and architectural applications, providing smooth curved lighting effects for indoor and outdoor projects.",
     applications: ["Architectural Decoration", "Signage Lighting", "Outdoor Landscape Lighting", "Creative Lighting Design"],
     highlights: ["Flexible silicone housing", "IP67 waterproof", "Custom lengths", "RGB & single color options"],
-    image: NEON_IMAGE,
+    image: "/images/neon.png",
     accent: "oklch(0.72 0.12 75)",
   },
 ];
