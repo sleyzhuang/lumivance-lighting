@@ -11,15 +11,31 @@ export default function ContactSection() {
     name: "",
     email: "",
     company: "",
+    whatsapp: "",
+    country: "",
+    productInterest: "",
     projectType: "",
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setSubmitted(true);
-  };
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+
+  const form = e.currentTarget;
+  const formData = new FormData(form);
+
+  await fetch("https://formsubmit.co/ajax/sleyzhuang@qq.com", {
+    method: "POST",
+    body: formData,
+  });
+
+  setSubmitted(true);
+};
+
+ 
+
+  
 
   return (
     <section
@@ -182,13 +198,41 @@ export default function ContactSection() {
                 >
                   Our engineering team will review your requirements and respond within 24 hours with a tailored lighting recommendation.
                 </p>
+                <div className="mt-8 flex flex-col gap-3 w-full">
+                  <a
+                    href="https://wa.me/8613662653626?text=Hi%20SQlux,%20I%20just%20submitted%20a%20project%20inquiry.%20I%20would%20like%20to%20discuss%20further."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rounded-lg bg-green-500 px-6 py-3 text-center text-white transition hover:scale-105"
+                  >
+                    Chat with Sley (Founder)
+                  </a>
+
+                  <a
+                    href="https://wa.me/8619885068212?text=Hi%20SQlux,%20I%20need%20technical%20support%20for%20my%20LED%20Strip%20project."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rounded-lg border border-green-500 px-6 py-3 text-center text-green-500 transition hover:scale-105"
+                  >
+                    Chat with Alex (Solution Engineer)
+                  </a>
+                </div>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="flex flex-col gap-6">
+              <form
+                onSubmit={handleSubmit}
+                className="flex flex-col gap-6"
+              >
+                
+                
+              
+                <input type="hidden" name="_subject" value="New SQlux Website Inquiry" />
+                <input type="hidden" name="_captcha" value="false" />
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <FormField label="Full Name *">
                     <input
                       type="text"
+                      name="name"
                       required
                       placeholder="Your name"
                       value={formData.name}
@@ -199,6 +243,7 @@ export default function ContactSection() {
                   <FormField label="Email Address *">
                     <input
                       type="email"
+                      name="email"
                       required
                       placeholder="your@email.com"
                       value={formData.email}
@@ -209,17 +254,60 @@ export default function ContactSection() {
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                  <FormField label="Company">
+                
+                  <FormField label="WhatsApp Number">
                     <input
                       type="text"
+                      name="whatsapp"
+                      placeholder="+1 234 567 890"
+                      value={formData.whatsapp}
+                      onChange={(e) =>
+                        setFormData({ ...formData, whatsapp: e.target.value })
+                      }
+                      className="lv-input"
+                   />
+                 </FormField>
+                  <FormField label="Company"> 
+                    <input
+                      type="text"
+                      name="company"
                       placeholder="Company name"
                       value={formData.company}
                       onChange={(e) => setFormData({ ...formData, company: e.target.value })}
                       className="lv-input"
                     />
                   </FormField>
+                  <FormField label="Country / Region">
+                    <input
+                      type="text"
+                      name="country"
+                      placeholder="United States"
+                      value={formData.country}
+                      onChange={(e) =>
+                        setFormData({ ...formData, country: e.target.value })
+                      }
+                      className="lv-input"
+                   />
+                 </FormField>
+                 <FormField label="Product Interest">
+                   <select
+                     name="productInterest"
+                     value={formData.productInterest}
+                     onChange={(e) =>
+                       setFormData({ ...formData, productInterest: e.target.value })
+                     }
+                     className="lv-input lv-select"
+                   >  
+                     <option value="">Select product</option>
+                     <option value="smd">SMD LED Strip</option>
+                     <option value="cob">COB LED Strip</option>
+                     <option value="neon">Neon LED Strip</option>
+                     <option value="other">Other</option>
+                   </select>
+                 </FormField>
                   <FormField label="Project Type">
                     <select
+                      name="projectType"
                       value={formData.projectType}
                       onChange={(e) => setFormData({ ...formData, projectType: e.target.value })}
                       className="lv-input lv-select"
@@ -238,6 +326,7 @@ export default function ContactSection() {
 
                 <FormField label="Project Requirements *">
                   <textarea
+                    name="message"
                     required
                     rows={5}
                     placeholder="Describe your project — space type, dimensions, desired lighting effect, timeline, and any specific technical requirements..."
