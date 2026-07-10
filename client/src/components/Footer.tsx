@@ -205,7 +205,7 @@ export default function Footer() {
             </h5>
             <div className="flex flex-col gap-3">
               <a
-                href="mailto:projects@lumivance.com"
+                href="mailto:sleyzhuang@qq.com"
                 style={{
                   fontFamily: "'Jost', sans-serif",
                   fontSize: "0.875rem",
@@ -221,7 +221,7 @@ export default function Footer() {
                   (e.target as HTMLElement).style.color = "oklch(0.52 0.008 65)";
                 }}
               >
-                projects@lumivance.com
+                sleyzhuang@qq.com
               </a>
               <span
                 style={{
