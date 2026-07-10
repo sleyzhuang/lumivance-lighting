@@ -18,8 +18,8 @@ export default function Navbar() {
 
   const navLinks = [
     { label: "Applications", href: "#applications" },
-    { label: "Solutions", href: "#solutions" },
     { label: "Products", href: "#products" },
+    { label: "Solutions", href: "#solutions" },
     { label: "Projects", href: "#projects" },
     { label: "OEM / ODM", href: "#oem" },
     { label: "Founder", href: "/founder" },

@@ -30,23 +30,23 @@ import { useScrollReveal } from "@/hooks/useScrollReveal";
 export default function Home() {
   useScrollReveal();
 
-  return (
-    <div
-      className="min-h-screen"
-      style={{ background: "oklch(0.115 0.005 240)" }}
-    >
-      <Navbar />
-      <main>
-        <HeroSection />
-        <ApplicationsSection />
-        <SolutionsSection />
-        <ProductsSection />
-        <ProjectsSection />
-        <OemSection />
-        <ManufacturingSection />
-        <ContactSection />
-      </main>
-      <Footer />
-    </div>
-  );
+ return (
+  <div
+    className="min-h-screen"
+    style={{ background: "oklch(0.115 0.005 240)" }}
+  >
+    <Navbar />
+    <main>
+      <HeroSection />
+      <ApplicationsSection />
+      <ProductsSection />
+      <SolutionsSection />
+      <ProjectsSection />
+      <OemSection />
+      <ManufacturingSection />
+      <ContactSection />
+    </main>
+    <Footer />
+  </div>
+);
 }
