@@ -8,7 +8,7 @@
 import { Mail, MessageCircle } from "lucide-react";
 import { useEffect, useState } from "react";
 
-const FOUNDER_IMAGE = "/manus-storage/sleyzhuang_be7bc646.jpg";
+const FOUNDER_IMAGE = "/images/founder.jpg";
 
 export default function FounderPage() {
   const [loaded, setLoaded] = useState(false);
