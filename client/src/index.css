@@ -4,7 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 /* ============================================================
-   LUMIVANCE — Scandinavian Precision Design System
+   SQLUX — Scandinavian Precision Design System
    Design Philosophy: Nordic Minimalism meets Swiss Editorial
    Color: Deep Charcoal (#111214) + Warm Amber (#D4A853) + Stone White (#F2EDE6)
    Typography: Playfair Display (display) + Jost (body)
@@ -50,7 +50,7 @@
 }
 
 :root {
-  /* Lumivance Dark Theme — always dark */
+  /* SQlux Dark Theme — always dark */
   --radius: 0.125rem;
 
   /* Core palette */
@@ -93,7 +93,7 @@
   --sidebar-ring: oklch(0.72 0.12 75);
 }
 
-/* Lumivance uses dark theme by default — no .dark class needed */
+/* SQlux uses dark theme by default — no .dark class needed */
 
 @layer base {
   * {
@@ -192,7 +192,7 @@
   .reveal-delay-4 { transition-delay: 0.4s; }
   .reveal-delay-5 { transition-delay: 0.5s; }
 
-  /* Form input styles — Lumivance editorial */
+  /* Form input styles — SQlux editorial */
   .lv-input {
     font-family: 'Jost', sans-serif;
     font-size: 0.9375rem;

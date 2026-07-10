@@ -264,7 +264,7 @@ export default function Footer() {
               letterSpacing: "0.06em",
             }}
           >
-            © {currentYear} Lumivance Lighting Technology Co., Ltd. All rights reserved.
+            © {currentYear} SQlux Lighting Technology Co., Ltd. All rights reserved.
           </span>
           <div className="flex gap-6">
             {["Privacy Policy", "Terms of Service", "Sitemap"].map((item) => (

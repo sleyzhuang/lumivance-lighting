@@ -1,5 +1,5 @@
 /**
- * Home Page — Lumivance Architectural LED Lighting Solutions
+ * Home Page — SQlux LED Strip Lighting Solutions
  * Design: Scandinavian Precision — Nordic Minimalism meets Swiss Editorial
  * Color: Deep Charcoal (#111214) + Warm Amber (#D4A853) + Stone White (#F2EDE6)
  * Typography: Playfair Display (display) + Jost (body)

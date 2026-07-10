@@ -1,5 +1,5 @@
 /**
- * Lumivance Navbar
+ * SQlux Navbar
  * Design: Scandinavian Precision — transparent on hero, solid on scroll
  * Dark charcoal bg, warm stone white text, amber accent
  */
