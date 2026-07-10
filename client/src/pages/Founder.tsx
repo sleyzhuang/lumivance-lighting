@@ -41,8 +41,8 @@ export default function FounderPage() {
       </div>
 
       {/* Main content */}
-      <div className="container py-16 md:py-24">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <div className="container py-6 md:py-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16 items-start">
           {/* Left: Photo */}
           <div
             style={{
@@ -52,12 +52,11 @@ export default function FounderPage() {
             }}
           >
             <div
-              className="relative overflow-hidden"
-              style={{
-                aspectRatio: "3/4",
-                background: "oklch(0.155 0.006 240)",
-              }}
-            >
+             className="relative overflow-hidden h-[628px]"
+             style={{
+               background: "oklch(0.155 0.006 240)",
+             }}
+           >
               <img
                 src={FOUNDER_IMAGE}
                 alt="Sley Zhuang, Founder"
@@ -124,7 +123,7 @@ export default function FounderPage() {
             </h1>
 
             {/* Bio paragraphs */}
-            <div className="space-y-6 mb-12">
+            <div className="space-y-2 mb-5">
               <p
                 style={{
                   fontFamily: "'Jost', sans-serif",
@@ -135,7 +134,7 @@ export default function FounderPage() {
                   letterSpacing: "0.01em",
                 }}
               >
-                I'm the founder of a professional LED lighting solutions company based in China, specializing in SMD/COB LED strips, Neon Flex, linear lighting systems, and custom architectural lighting solutions for international projects.
+                I'm the founder of SQlux, a professional LED strip lighting company based in China, specializing in SMD LED Strip, COB LED Strip, Neon Flex, and customized lighting solutions for global projects.
               </p>
 
               <p
@@ -148,7 +147,7 @@ export default function FounderPage() {
                   letterSpacing: "0.01em",
                 }}
               >
-                Over the past years, I've worked closely with lighting contractors, stretch ceiling companies, interior designers, and commercial project suppliers from different countries. Through these collaborations, I realized that many lighting projects face the same challenges — visible LED dots, uneven lighting, voltage drop, inconsistent color temperature, and unreliable product quality.
+                Over the years, I have worked with lighting contractors, stretch ceiling companies, interior designers, and project suppliers worldwide. I understand the common challenges in lighting projects — visible LED dots, uneven illumination, voltage drop, and inconsistent quality.
               </p>
 
               <p
@@ -161,48 +160,24 @@ export default function FounderPage() {
                   letterSpacing: "0.01em",
                 }}
               >
-                That's why we focus not only on manufacturing LED strips, but on providing practical and reliable lighting solutions for real projects.
+                That's why SQlux focuses not only on manufacturing LED strips, but also on providing reliable lighting solutions that help customers achieve better project results.
               </p>
 
-              <p
-                style={{
-                  fontFamily: "'Jost', sans-serif",
-                  fontSize: "0.9375rem",
-                  fontWeight: 300,
-                  color: "oklch(0.75 0.008 65)",
-                  lineHeight: 1.8,
-                  letterSpacing: "0.01em",
-                }}
-              >
-                We believe modern lighting should not simply illuminate a space — it should enhance architectural atmosphere, interior aesthetics, and user experience.
-              </p>
+              
             </div>
 
             {/* Core values */}
-            <div className="mb-12 p-6 md:p-8" style={{ background: "oklch(0.155 0.006 240)" }}>
-              <h3
-                className="mb-4"
-                style={{
-                  fontFamily: "'Playfair Display', serif",
-                  fontSize: "1.125rem",
-                  fontWeight: 400,
-                  color: "oklch(0.94 0.008 65)",
-                  letterSpacing: "-0.01em",
-                }}
-              >
-                Our Commitment
-              </h3>
-              <ul className="space-y-3">
+            <div className="mb-8 p-5 md:p-6" style={{ background: "oklch(0.155 0.006 240)" }}>
+              
+              <ul className="flex flex-wrap gap-4">
                 {[
-                  "Stable and consistent product quality",
+                  "Stable product quality",
                   "Professional project support",
-                  "Fast and efficient communication",
-                  "Flexible OEM/ODM solutions",
-                  "Long-term business partnerships",
-                ].map((item, i) => (
+                 "Long-term business partnerships",
+                 ].map((item, i) => (
                   <li
-                    key={i}
-                    className="flex items-start gap-3"
+                   key={i}
+                   className="flex items-center gap-2"
                     style={{
                       fontFamily: "'Jost', sans-serif",
                       fontSize: "0.875rem",
@@ -214,7 +189,6 @@ export default function FounderPage() {
                     <span
                       style={{
                         color: "oklch(0.72 0.12 75)",
-                        marginTop: "0.25rem",
                         flexShrink: 0,
                       }}
                     >
@@ -228,25 +202,13 @@ export default function FounderPage() {
 
             {/* Contact section */}
             <div>
-              <p
-                className="mb-6"
-                style={{
-                  fontFamily: "'Jost', sans-serif",
-                  fontSize: "0.875rem",
-                  fontWeight: 300,
-                  color: "oklch(0.62 0.008 65)",
-                  lineHeight: 1.7,
-                  letterSpacing: "0.01em",
-                }}
-              >
-                Whether you are working on commercial lighting, stretch ceilings, hotel projects, retail spaces, or custom architectural applications, I'm ready to help you find the right lighting solution for your project.
-              </p>
+              
 
               {/* Contact buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
                 {/* WhatsApp */}
                 <a
-                  href="https://wa.me/8613662653626"
+                  href="https://wa.me/8613662653626?text=Hi%20SQlux,%20I%20am%20interested%20in%20your%20LED%20Strip%20solutions."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group flex items-center justify-center gap-2 px-6 py-3 text-sm font-medium tracking-widest uppercase transition-all duration-300"
