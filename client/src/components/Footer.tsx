@@ -1,7 +1,9 @@
 /**
- * Footer — Lumivance
+ * Footer — SQlux
  * Design: Scandinavian Precision — minimal editorial footer
  */
+
+import { Instagram, Linkedin, Facebook } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -246,6 +248,76 @@ export default function Footer() {
                 <br />
                 China
               </span>
+            </div>
+            <div className="mt-8">
+              <h5
+                className="mb-5"
+                style={{
+                  fontFamily: "'Jost', sans-serif",
+                  fontSize: "0.5625rem",
+                  fontWeight: 500,
+                  letterSpacing: "0.22em",
+                  textTransform: "uppercase",
+                  color: "oklch(0.52 0.008 65)",
+                }}
+              >
+                Follow SQlux
+              </h5>
+
+              <div className="flex items-center gap-4">
+                <a
+                  href="https://www.instagram.com/sqlux.official/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                  style={{
+                    color: "oklch(0.52 0.008 65)",
+                    transition: "color 0.2s ease",
+                  }}
+                  onMouseEnter={(e) => {
+                    (e.currentTarget as HTMLElement).style.color = "oklch(0.72 0.12 75)";
+                  }}
+                  onMouseLeave={(e) => {
+                    (e.currentTarget as HTMLElement).style.color = "oklch(0.52 0.008 65)";
+                  }}
+                >
+                  <Instagram size={20} />
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/company/sqlux/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                  style={{ color: "oklch(0.52 0.008 65)", transition: "color 0.2s ease",
+                  }}
+                  onMouseEnter={(e) => {
+                    (e.currentTarget as HTMLElement).style.color = "oklch(0.72 0.12 75)";
+                  }}
+                  onMouseLeave={(e) => {
+                    (e.currentTarget as HTMLElement).style.color = "oklch(0.52 0.008 65)";
+                  }}
+                >
+                  <Linkedin size={20} />
+                </a>
+
+                <a
+                  href="https://www.facebook.com/profile.php?id=61591954076193"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                  style={{ color: "oklch(0.52 0.008 65)", transition: "color 0.2s ease",
+                  }}
+                  onMouseEnter={(e) => {
+                    (e.currentTarget as HTMLElement).style.color = "oklch(0.72 0.12 75)";
+                  }}
+                  onMouseLeave={(e) => {
+                    (e.currentTarget as HTMLElement).style.color = "oklch(0.52 0.008 65)";
+                  }}
+                >
+                  <Facebook size={20} />
+                </a>
+              </div>
             </div>
           </div>
         </div>
